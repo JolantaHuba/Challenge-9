@@ -10,14 +10,11 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="header container">
+    <header class="header">
         <p class="header__logo">
             <span class="logo__sign">MariaAnna</span>
             photography
@@ -33,12 +30,12 @@
 
     <nav class="nav">
         <a href="#" class="nav__logo">MariaAnna</a>
-        <button class="nav__icon" data-toggle="collapse" data-target="#collapseExample" aria-label="Menu">
+        <button class="nav__icon" aria-label="Menu">
             <div class="nav__icon-bar"></div>
             <div class="nav__icon-bar"></div>
             <div class="nav__icon-bar"></div>
         </button>
-        <ul class="nav__list collapse" id="collapseExample">
+        <ul class="nav__list">
             <li class="nav__item"><a class="nav__link" href="#about">About me</a></li>
             <li class="nav__item"><a class="nav__link" href="#works">Works</a></li>
             <li class="nav__item"><a class="nav__link" href="#contact">Contact me</a></li>
@@ -46,18 +43,101 @@
         </ul>
     </nav>
 
+    <section class="about">
+        <h2 class="secondary__title">A little bit about me</h2>
+        <p class="about__text text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora dolorem ducimus
+            vel aut
+            voluptas aliquam natus praesentium, doloribus nobis suscipit amet facere culpa, at, error rem dignissimos
+            molestias beatae quo.</p>
+    </section>
 
+    <section class="works">
+        <h2 class="secondary__title">Works</h2>
+        <div class="works__container">
+            <div class="works__img img__one">
+                <img src="img/nature.jpg" alt="forest" class="img">
+                <div class="works__card">
+                    <h3 class="card__title">Nature</h3>
+                    <p class="text text--works">beautiful nature</p>
+                </div>
+            </div>
+            <div class="works__img img__two">
+                <img src="img/urban.jpg" alt="bikes" class="img">
+                <div class="works__card">
+                    <h3 class="card__title">Urban</h3>
+                    <p class="text text--works">beautiful urban</p>
+                </div>
+            </div>
+            <div class="works__img">
+                <img src="img/people.jpg" alt="man in forest" class="img">
+                <div class="works__card">
+                    <h3 class="card__title">People</h3>
+                    <p class="text text--works">beautiful people</p>
+                </div>
+            </div>
+            <div class="works__img">
+                <img src="img/wedding.jpg" alt="bouquet of flowers" class="img">
+                <div class="works__card">
+                    <h3 class="card__title">Wedding</h3>
+                    <p class="text text--works">beautiful wedding</p>
+                </div>
+            </div>
+            <div class="works__img img__five">
+                <img src="img/architecture.jpg" alt="building" class="img">
+                <div class="works__card">
+                    <h3 class="card__title">Architecture</h3>
+                    <p class="text text--works">beautiful architecture</p>
+                </div>
+            </div>
+            <div class="works__img">
+                <img src="img/animals.jpg" alt="lying lion" class="img">
+                <div class="works__card">
+                    <h3 class="card__title">Animals</h3>
+                    <p class="text text--works">beautiful animals</p>
+                </div>
+            </div>
+        </div>
+        <button class="works__btn">Load more</button>
+    </section>
 
+    <section class="reviews">
+        <h2 class="secondary__title secondary__title--small">See the world through my lens</h2>
+        <div class="reviews__slider">
+            <blockquote class="review__quote quote__1 text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quisquam error? Doloremque labore velit
+                eaque expedita sequi rerum ipsam quos aliquid saepe, eum commodi earum ratione praesentium,
+                exercitationem numquam illum?
+                <cite class="review__author">John Doe CEO at Unknown</cite>
+            </blockquote>
+            <blockquote class="review__quote quote__2 text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quisquam error? Doloremque labore velit
+                eaque expedita sequi rerum ipsam quos aliquid saepe, eum commodi earum ratione praesentium,
+                exercitationem numquam illum?
+                <cite class="review__author">John Doe CEO at Unknown</cite>
+            </blockquote>
+            <blockquote class="review__quote quote__3 text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quisquam error? Doloremque labore velit
+                eaque expedita sequi rerum ipsam quos aliquid saepe, eum commodi earum ratione praesentium,
+                exercitationem numquam illum?
+                <cite class="review__author">John Doe CEO at Unknown</cite>
+            </blockquote>
+        </div>
+        <div class="review__controls">
+            <button class="review__dot dot__1"></button>
+            <button class="review__dot dot__2 active"></button>
+            <button class="review__dot dot__3"></button>
+        </div>
+    </section>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+    <section class="video">
+        <div class="video__content">
+            <img src="img/video.jpg" alt="my video" class="video__img">
+            <img src="img/play.png" alt="" class="video__play">
+        </div>
+    </section>
+
+    <script src="http://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 
