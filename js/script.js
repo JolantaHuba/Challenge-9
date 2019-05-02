@@ -29,7 +29,7 @@ $(document).on('scroll', function () {
 
 
 // SCROLL TO SECTION (BY CLASS)
-$('.nav__link').on('click', function () {
+$('.nav__link, .nav__logo, .arrow-down, .arrow-up').on('click', function () {
     var goTo = $(this).attr('href').replace('#', '');
     var howFar = $('.' + goTo).offset().top;
     $('html, body').animate({

@@ -29,7 +29,7 @@
     </header>
 
     <nav class="nav">
-        <a href="#" class="nav__logo">MariaAnna</a>
+        <a href="#header" class="nav__logo">MariaAnna</a>
         <button class="nav__icon" aria-label="Menu">
             <div class="nav__icon-bar"></div>
             <div class="nav__icon-bar"></div>
@@ -97,7 +97,7 @@
                 </div>
             </div>
         </div>
-        <button class="works__btn">Load more</button>
+        <button class="btn">Load more</button>
     </section>
 
     <section class="reviews">
@@ -129,12 +129,51 @@
         </div>
     </section>
 
-    <section class="video">
+    <div class="video">
         <div class="video__content">
             <img src="img/video.jpg" alt="my video" class="video__img">
-            <img src="img/play.png" alt="" class="video__play">
+            <div class="video__play"><img src="img/play.png" alt="" class="video__img"></div>
+
+        </div>
+    </div>
+
+    <section class="follow">
+        <h2 class="secondary__title">Follow me</h2>
+        <div class="follow__icons">
+            <a href="#" class="follow__link"><span class="follow__icon fab fa-pinterest-p"></span></a>
+            <a href="#" class="follow__link"><span class="follow__icon fab fa-instagram"></span></a>
+            <a href="#" class="follow__link"><span class="follow__icon fab fa-twitter"></span></a>
+            <a href="#" class="follow__link"><span class="follow__icon fab fa-google-plus-g"></span></a>
+            <a href="#" class="follow__link"><span class="follow__icon fab fa-tumblr"></span></a>
         </div>
     </section>
+
+
+    <section class="contact">
+        <h2 class="secondary__title">Contact me</h2>
+        <p class="contact__text text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, fuga!</p>
+        <form class="contact__form">
+            <label for="name">Name</label>
+            <input class="contact__input" type="text" name="name" id="name" placeholder="Your Name*">
+            <label for="name">Email</label>
+            <input class="contact__input" type="email" name="email" id="email" placeholder="Your email address*">
+            <label for="message">Message</label>
+            <textarea class="contact__input contact__message" name="message" id="message"
+                placeholder="Your message*"></textarea>
+            <p class="info__text text">Lorem ipsum dolor, sit amet consect.</p>
+            <button class="contact__btn btn">Send</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <a href="#header" class="arrow-up"><span class="fas fa-chevron-up"></span></a>
+        <p class="header__logo header__logo--bottom">
+            <span class="logo__sign">MariaAnna</span>
+            photography
+        </p>
+        <p class="copy text">&copy; Coded by JH</p>
+    </footer>
+
 
     <script src="http://code.jquery.com/jquery-3.4.0.min.js"
         integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
